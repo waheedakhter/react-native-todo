@@ -1,0 +1,1 @@
+{"version":3,"sources":["Images.ts"],"names":["images","safetyCone","require"],"mappings":";;;;AACA,IAAMA,MAAM,GAAG;AACbC,EAAAA,UAAU,EAAEC,OAAO,CAAC,sCAAD;AADN,CAAf;eAIeF,M","sourcesContent":["// leave off @2x/@3x\nconst images = {\n  safetyCone: require(\"../Images/safetyCone/safety-cone.png\"),\n};\n\nexport default images;\n"]}

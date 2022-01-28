@@ -1,0 +1,47 @@
+cc0fc2958af5e6b9c2d6199db2599499
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var iterator_1 = require("../symbol/iterator");
+
+exports.subscribeToIterable = function (iterable) {
+  return function (subscriber) {
+    var iterator = iterable[iterator_1.iterator]();
+
+    do {
+      var item = void 0;
+
+      try {
+        item = iterator.next();
+      } catch (err) {
+        subscriber.error(err);
+        return subscriber;
+      }
+
+      if (item.done) {
+        subscriber.complete();
+        break;
+      }
+
+      subscriber.next(item.value);
+
+      if (subscriber.closed) {
+        break;
+      }
+    } while (true);
+
+    if (typeof iterator.return === 'function') {
+      subscriber.add(function () {
+        if (iterator.return) {
+          iterator.return();
+        }
+      });
+    }
+
+    return subscriber;
+  };
+};
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy9pbnRlcm5hbC91dGlsL3N1YnNjcmliZVRvSXRlcmFibGUudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7Ozs7O0FBQ0EsSUFBQSxVQUFBLEdBQUEsT0FBQSxDQUFBLG9CQUFBLENBQUE7O0FBRWEsT0FBQSxDQUFBLG1CQUFBLEdBQXNCLFVBQUksUUFBSixFQUF5QjtBQUFLLFNBQUEsVUFBQyxVQUFELEVBQTBCO0FBQ3pGLFFBQU0sUUFBUSxHQUFJLFFBQWdCLENBQUMsVUFBQSxDQUFBLFFBQUQsQ0FBaEIsRUFBbEI7O0FBRUEsT0FBRztBQUNELFVBQUksSUFBSSxHQUFBLEtBQUEsQ0FBUjs7QUFDQSxVQUFJO0FBQ0YsUUFBQSxJQUFJLEdBQUcsUUFBUSxDQUFDLElBQVQsRUFBUDtBQUNELE9BRkQsQ0FFRSxPQUFPLEdBQVAsRUFBWTtBQUNaLFFBQUEsVUFBVSxDQUFDLEtBQVgsQ0FBaUIsR0FBakI7QUFDQSxlQUFPLFVBQVA7QUFDRDs7QUFDRCxVQUFJLElBQUksQ0FBQyxJQUFULEVBQWU7QUFDYixRQUFBLFVBQVUsQ0FBQyxRQUFYO0FBQ0E7QUFDRDs7QUFDRCxNQUFBLFVBQVUsQ0FBQyxJQUFYLENBQWdCLElBQUksQ0FBQyxLQUFyQjs7QUFDQSxVQUFJLFVBQVUsQ0FBQyxNQUFmLEVBQXVCO0FBQ3JCO0FBQ0Q7QUFDRixLQWhCRCxRQWdCUyxJQWhCVDs7QUFtQkEsUUFBSSxPQUFPLFFBQVEsQ0FBQyxNQUFoQixLQUEyQixVQUEvQixFQUEyQztBQUN6QyxNQUFBLFVBQVUsQ0FBQyxHQUFYLENBQWUsWUFBQTtBQUNiLFlBQUksUUFBUSxDQUFDLE1BQWIsRUFBcUI7QUFDbkIsVUFBQSxRQUFRLENBQUMsTUFBVDtBQUNEO0FBQ0YsT0FKRDtBQUtEOztBQUVELFdBQU8sVUFBUDtBQTlCK0QsR0FBQTtBQStCaEUsQ0EvQlkifQ==

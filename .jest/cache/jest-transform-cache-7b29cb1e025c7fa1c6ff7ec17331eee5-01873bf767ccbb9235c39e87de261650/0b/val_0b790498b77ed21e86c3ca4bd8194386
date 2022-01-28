@@ -1,0 +1,12 @@
+40d669fea0c08f7477d6675b2cc7f239
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.val = val;
+
+function val(v) {
+  return v && v.__getValue ? v.__getValue() : v || 0;
+}
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInZhbC5qcyJdLCJuYW1lcyI6WyJ2Il0sIm1hcHBpbmdzIjoiOzs7Ozs7O0FBQU8sU0FBQSxHQUFBLENBQUEsQ0FBQSxFQUFnQjtBQUNyQixTQUFPQSxDQUFDLElBQUlBLENBQUMsQ0FBTkEsVUFBQUEsR0FBb0JBLENBQUMsQ0FBckJBLFVBQW9CQSxFQUFwQkEsR0FBcUNBLENBQUMsSUFBN0MsQ0FBQTtBQUNEIiwic291cmNlc0NvbnRlbnQiOlsiZXhwb3J0IGZ1bmN0aW9uIHZhbCh2KSB7XG4gIHJldHVybiB2ICYmIHYuX19nZXRWYWx1ZSA/IHYuX19nZXRWYWx1ZSgpIDogdiB8fCAwO1xufVxuIl19

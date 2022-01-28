@@ -1,0 +1,97 @@
+01c6180530c064705279efb7efbcf2d9
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var React = _interopRequireWildcard(require("react"));
+
+var _GenericTouchable = _interopRequireDefault(require("./GenericTouchable"));
+
+function _interopRequireDefault(obj) {
+  return obj && obj.__esModule ? obj : {
+    default: obj
+  };
+}
+
+function _getRequireWildcardCache() {
+  if (typeof WeakMap !== "function") return null;
+  var cache = new WeakMap();
+
+  _getRequireWildcardCache = function _getRequireWildcardCache() {
+    return cache;
+  };
+
+  return cache;
+}
+
+function _interopRequireWildcard(obj) {
+  if (obj && obj.__esModule) {
+    return obj;
+  }
+
+  if (obj === null || typeof obj !== "object" && typeof obj !== "function") {
+    return {
+      default: obj
+    };
+  }
+
+  var cache = _getRequireWildcardCache();
+
+  if (cache && cache.has(obj)) {
+    return cache.get(obj);
+  }
+
+  var newObj = {};
+  var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor;
+
+  for (var key in obj) {
+    if (Object.prototype.hasOwnProperty.call(obj, key)) {
+      var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null;
+
+      if (desc && (desc.get || desc.set)) {
+        Object.defineProperty(newObj, key, desc);
+      } else {
+        newObj[key] = obj[key];
+      }
+    }
+  }
+
+  newObj.default = obj;
+
+  if (cache) {
+    cache.set(obj, newObj);
+  }
+
+  return newObj;
+}
+
+function _extends() {
+  _extends = Object.assign || function (target) {
+    for (var i = 1; i < arguments.length; i++) {
+      var source = arguments[i];
+
+      for (var key in source) {
+        if (Object.prototype.hasOwnProperty.call(source, key)) {
+          target[key] = source[key];
+        }
+      }
+    }
+
+    return target;
+  };
+
+  return _extends.apply(this, arguments);
+}
+
+var TouchableWithoutFeedback = React.forwardRef(function (props, ref) {
+  return React.createElement(_GenericTouchable.default, _extends({
+    ref: ref
+  }, props));
+});
+TouchableWithoutFeedback.defaultProps = _GenericTouchable.default.defaultProps;
+var _default = TouchableWithoutFeedback;
+exports.default = _default;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIlRvdWNoYWJsZVdpdGhvdXRGZWVkYmFjay50c3giXSwibmFtZXMiOlsiVG91Y2hhYmxlV2l0aG91dEZlZWRiYWNrIiwicmVmIiwiR2VuZXJpY1RvdWNoYWJsZSJdLCJtYXBwaW5ncyI6Ijs7Ozs7OztBQUFBLElBQUEsS0FBQSxHQUFBLHVCQUFBLENBQUEsT0FBQSxDQUFBLE9BQUEsQ0FBQSxDQUFBOztBQUVBLElBQUEsaUJBQUEsR0FBQSxzQkFBQSxDQUFBLE9BQUEsQ0FBQSxvQkFBQSxDQUFBLENBQUE7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztBQUVBLElBQU1BLHdCQUF3QixHQUFHLEtBQUssQ0FBTCxVQUFBLENBRy9CLFVBQUEsS0FBQSxFQUFBLEdBQUE7QUFBQSxTQUFnQixLQUFBLENBQUEsYUFBQSxDQUFDLGlCQUFBLENBQUQsT0FBQSxFQUFBLFFBQUEsQ0FBQTtBQUFrQixJQUFBLEdBQUcsRUFBRUM7QUFBdkIsR0FBQSxFQUhsQixLQUdrQixDQUFBLENBQWhCO0FBQUEsQ0FIK0IsQ0FBakM7QUFLQUQsd0JBQXdCLENBQXhCQSxZQUFBQSxHQUF3Q0UsaUJBQUFBLENBQUFBLE9BQUFBLENBQXhDRixZQUFBQTtlQUVlQSx3QiIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCAqIGFzIFJlYWN0IGZyb20gJ3JlYWN0JztcbmltcG9ydCB7IFByb3BzV2l0aENoaWxkcmVuIH0gZnJvbSAncmVhY3QnO1xuaW1wb3J0IEdlbmVyaWNUb3VjaGFibGUsIHsgR2VuZXJpY1RvdWNoYWJsZVByb3BzIH0gZnJvbSAnLi9HZW5lcmljVG91Y2hhYmxlJztcblxuY29uc3QgVG91Y2hhYmxlV2l0aG91dEZlZWRiYWNrID0gUmVhY3QuZm9yd2FyZFJlZjxcbiAgR2VuZXJpY1RvdWNoYWJsZSxcbiAgUHJvcHNXaXRoQ2hpbGRyZW48R2VuZXJpY1RvdWNoYWJsZVByb3BzPlxuPigocHJvcHMsIHJlZikgPT4gPEdlbmVyaWNUb3VjaGFibGUgcmVmPXtyZWZ9IHsuLi5wcm9wc30gLz4pO1xuXG5Ub3VjaGFibGVXaXRob3V0RmVlZGJhY2suZGVmYXVsdFByb3BzID0gR2VuZXJpY1RvdWNoYWJsZS5kZWZhdWx0UHJvcHM7XG5cbmV4cG9ydCBkZWZhdWx0IFRvdWNoYWJsZVdpdGhvdXRGZWVkYmFjaztcbiJdfQ==

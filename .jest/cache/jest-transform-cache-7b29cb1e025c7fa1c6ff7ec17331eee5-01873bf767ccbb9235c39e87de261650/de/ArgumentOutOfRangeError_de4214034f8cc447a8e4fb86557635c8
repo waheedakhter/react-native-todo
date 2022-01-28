@@ -1,0 +1,21 @@
+e1db7cb33ddfcafb511cb15bd0da857e
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var ArgumentOutOfRangeErrorImpl = function () {
+  function ArgumentOutOfRangeErrorImpl() {
+    Error.call(this);
+    this.message = 'argument out of range';
+    this.name = 'ArgumentOutOfRangeError';
+    return this;
+  }
+
+  ArgumentOutOfRangeErrorImpl.prototype = Object.create(Error.prototype);
+  return ArgumentOutOfRangeErrorImpl;
+}();
+
+exports.ArgumentOutOfRangeError = ArgumentOutOfRangeErrorImpl;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy9pbnRlcm5hbC91dGlsL0FyZ3VtZW50T3V0T2ZSYW5nZUVycm9yLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7Ozs7OztBQU9BLElBQU0sMkJBQTJCLEdBQUksWUFBQTtBQUNuQyxXQUFTLDJCQUFULEdBQW9DO0FBQ2xDLElBQUEsS0FBSyxDQUFDLElBQU4sQ0FBVyxJQUFYO0FBQ0EsU0FBSyxPQUFMLEdBQWUsdUJBQWY7QUFDQSxTQUFLLElBQUwsR0FBWSx5QkFBWjtBQUNBLFdBQU8sSUFBUDtBQUNEOztBQUVELEVBQUEsMkJBQTJCLENBQUMsU0FBNUIsR0FBd0MsTUFBTSxDQUFDLE1BQVAsQ0FBYyxLQUFLLENBQUMsU0FBcEIsQ0FBeEM7QUFFQSxTQUFPLDJCQUFQO0FBQ0QsQ0FYbUMsRUFBcEM7O0FBdUJhLE9BQUEsQ0FBQSx1QkFBQSxHQUF1RCwyQkFBdkQifQ==

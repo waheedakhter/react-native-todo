@@ -1,0 +1,81 @@
+a55c7655f28473c9bff144eebb6f5cf1
+"use strict";
+
+var __extends = this && this.__extends || function () {
+  var _extendStatics = function extendStatics(d, b) {
+    _extendStatics = Object.setPrototypeOf || {
+      __proto__: []
+    } instanceof Array && function (d, b) {
+      d.__proto__ = b;
+    } || function (d, b) {
+      for (var p in b) {
+        if (b.hasOwnProperty(p)) d[p] = b[p];
+      }
+    };
+
+    return _extendStatics(d, b);
+  };
+
+  return function (d, b) {
+    _extendStatics(d, b);
+
+    function __() {
+      this.constructor = d;
+    }
+
+    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+  };
+}();
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var innerSubscribe_1 = require("../innerSubscribe");
+
+function buffer(closingNotifier) {
+  return function bufferOperatorFunction(source) {
+    return source.lift(new BufferOperator(closingNotifier));
+  };
+}
+
+exports.buffer = buffer;
+
+var BufferOperator = function () {
+  function BufferOperator(closingNotifier) {
+    this.closingNotifier = closingNotifier;
+  }
+
+  BufferOperator.prototype.call = function (subscriber, source) {
+    return source.subscribe(new BufferSubscriber(subscriber, this.closingNotifier));
+  };
+
+  return BufferOperator;
+}();
+
+var BufferSubscriber = function (_super) {
+  __extends(BufferSubscriber, _super);
+
+  function BufferSubscriber(destination, closingNotifier) {
+    var _this = _super.call(this, destination) || this;
+
+    _this.buffer = [];
+
+    _this.add(innerSubscribe_1.innerSubscribe(closingNotifier, new innerSubscribe_1.SimpleInnerSubscriber(_this)));
+
+    return _this;
+  }
+
+  BufferSubscriber.prototype._next = function (value) {
+    this.buffer.push(value);
+  };
+
+  BufferSubscriber.prototype.notifyNext = function () {
+    var buffer = this.buffer;
+    this.buffer = [];
+    this.destination.next(buffer);
+  };
+
+  return BufferSubscriber;
+}(innerSubscribe_1.SimpleOuterSubscriber);
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy9pbnRlcm5hbC9vcGVyYXRvcnMvYnVmZmVyLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O0FBSUEsSUFBQSxnQkFBQSxHQUFBLE9BQUEsQ0FBQSxtQkFBQSxDQUFBOztBQTBDQSxTQUFnQixNQUFoQixDQUEwQixlQUExQixFQUEwRDtBQUN4RCxTQUFPLFNBQVMsc0JBQVQsQ0FBZ0MsTUFBaEMsRUFBcUQ7QUFDMUQsV0FBTyxNQUFNLENBQUMsSUFBUCxDQUFZLElBQUksY0FBSixDQUFzQixlQUF0QixDQUFaLENBQVA7QUFDRCxHQUZEO0FBR0Q7O0FBSkQsT0FBQSxDQUFBLE1BQUEsR0FBQSxNQUFBOztBQU1BLElBQUEsY0FBQSxHQUFBLFlBQUE7QUFFRSxXQUFBLGNBQUEsQ0FBb0IsZUFBcEIsRUFBb0Q7QUFBaEMsU0FBQSxlQUFBLEdBQUEsZUFBQTtBQUNuQjs7QUFFRCxFQUFBLGNBQUEsQ0FBQSxTQUFBLENBQUEsSUFBQSxHQUFBLFVBQUssVUFBTCxFQUFrQyxNQUFsQyxFQUE2QztBQUMzQyxXQUFPLE1BQU0sQ0FBQyxTQUFQLENBQWlCLElBQUksZ0JBQUosQ0FBcUIsVUFBckIsRUFBaUMsS0FBSyxlQUF0QyxDQUFqQixDQUFQO0FBQ0QsR0FGRDs7QUFHRixTQUFBLGNBQUE7QUFBQyxDQVJELEVBQUE7O0FBZUEsSUFBQSxnQkFBQSxHQUFBLFVBQUEsTUFBQSxFQUFBO0FBQWtDLEVBQUEsU0FBQSxDQUFBLGdCQUFBLEVBQUEsTUFBQSxDQUFBOztBQUdoQyxXQUFBLGdCQUFBLENBQVksV0FBWixFQUEwQyxlQUExQyxFQUEwRTtBQUExRSxRQUFBLEtBQUEsR0FDRSxNQUFBLENBQUEsSUFBQSxDQUFBLElBQUEsRUFBTSxXQUFOLEtBQWtCLElBRHBCOztBQUZRLElBQUEsS0FBQSxDQUFBLE1BQUEsR0FBYyxFQUFkOztBQUlOLElBQUEsS0FBSSxDQUFDLEdBQUwsQ0FBUyxnQkFBQSxDQUFBLGNBQUEsQ0FBZSxlQUFmLEVBQWdDLElBQUksZ0JBQUEsQ0FBQSxxQkFBSixDQUEwQixLQUExQixDQUFoQyxDQUFUOzs7QUFDRDs7QUFFUyxFQUFBLGdCQUFBLENBQUEsU0FBQSxDQUFBLEtBQUEsR0FBVixVQUFnQixLQUFoQixFQUF3QjtBQUN0QixTQUFLLE1BQUwsQ0FBWSxJQUFaLENBQWlCLEtBQWpCO0FBQ0QsR0FGUzs7QUFJVixFQUFBLGdCQUFBLENBQUEsU0FBQSxDQUFBLFVBQUEsR0FBQSxZQUFBO0FBQ0UsUUFBTSxNQUFNLEdBQUcsS0FBSyxNQUFwQjtBQUNBLFNBQUssTUFBTCxHQUFjLEVBQWQ7QUFDQSxTQUFLLFdBQUwsQ0FBaUIsSUFBakIsQ0FBdUIsTUFBdkI7QUFDRCxHQUpEOztBQUtGLFNBQUEsZ0JBQUE7QUFBQyxDQWpCRCxDQUFrQyxnQkFBQSxDQUFBLHFCQUFsQyxDQUFBIn0=

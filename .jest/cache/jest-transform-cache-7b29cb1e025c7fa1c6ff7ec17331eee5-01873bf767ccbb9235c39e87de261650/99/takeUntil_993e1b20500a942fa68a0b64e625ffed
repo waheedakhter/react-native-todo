@@ -1,0 +1,83 @@
+3f5eb8d46cbf1f266a820023eec23816
+"use strict";
+
+var __extends = this && this.__extends || function () {
+  var _extendStatics = function extendStatics(d, b) {
+    _extendStatics = Object.setPrototypeOf || {
+      __proto__: []
+    } instanceof Array && function (d, b) {
+      d.__proto__ = b;
+    } || function (d, b) {
+      for (var p in b) {
+        if (b.hasOwnProperty(p)) d[p] = b[p];
+      }
+    };
+
+    return _extendStatics(d, b);
+  };
+
+  return function (d, b) {
+    _extendStatics(d, b);
+
+    function __() {
+      this.constructor = d;
+    }
+
+    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+  };
+}();
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var innerSubscribe_1 = require("../innerSubscribe");
+
+function takeUntil(notifier) {
+  return function (source) {
+    return source.lift(new TakeUntilOperator(notifier));
+  };
+}
+
+exports.takeUntil = takeUntil;
+
+var TakeUntilOperator = function () {
+  function TakeUntilOperator(notifier) {
+    this.notifier = notifier;
+  }
+
+  TakeUntilOperator.prototype.call = function (subscriber, source) {
+    var takeUntilSubscriber = new TakeUntilSubscriber(subscriber);
+    var notifierSubscription = innerSubscribe_1.innerSubscribe(this.notifier, new innerSubscribe_1.SimpleInnerSubscriber(takeUntilSubscriber));
+
+    if (notifierSubscription && !takeUntilSubscriber.seenValue) {
+      takeUntilSubscriber.add(notifierSubscription);
+      return source.subscribe(takeUntilSubscriber);
+    }
+
+    return takeUntilSubscriber;
+  };
+
+  return TakeUntilOperator;
+}();
+
+var TakeUntilSubscriber = function (_super) {
+  __extends(TakeUntilSubscriber, _super);
+
+  function TakeUntilSubscriber(destination) {
+    var _this = _super.call(this, destination) || this;
+
+    _this.seenValue = false;
+    return _this;
+  }
+
+  TakeUntilSubscriber.prototype.notifyNext = function () {
+    this.seenValue = true;
+    this.complete();
+  };
+
+  TakeUntilSubscriber.prototype.notifyComplete = function () {};
+
+  return TakeUntilSubscriber;
+}(innerSubscribe_1.SimpleOuterSubscriber);
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy9pbnRlcm5hbC9vcGVyYXRvcnMvdGFrZVVudGlsLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O0FBS0EsSUFBQSxnQkFBQSxHQUFBLE9BQUEsQ0FBQSxtQkFBQSxDQUFBOztBQTBDQSxTQUFnQixTQUFoQixDQUE2QixRQUE3QixFQUFzRDtBQUNwRCxTQUFPLFVBQUMsTUFBRCxFQUFzQjtBQUFLLFdBQUEsTUFBTSxDQUFDLElBQVAsQ0FBWSxJQUFJLGlCQUFKLENBQVosUUFBWSxDQUFaLENBQUE7QUFBNEMsR0FBOUU7QUFDRDs7QUFGRCxPQUFBLENBQUEsU0FBQSxHQUFBLFNBQUE7O0FBSUEsSUFBQSxpQkFBQSxHQUFBLFlBQUE7QUFDRSxXQUFBLGlCQUFBLENBQW9CLFFBQXBCLEVBQTZDO0FBQXpCLFNBQUEsUUFBQSxHQUFBLFFBQUE7QUFDbkI7O0FBRUQsRUFBQSxpQkFBQSxDQUFBLFNBQUEsQ0FBQSxJQUFBLEdBQUEsVUFBSyxVQUFMLEVBQWdDLE1BQWhDLEVBQTJDO0FBQ3pDLFFBQU0sbUJBQW1CLEdBQUcsSUFBSSxtQkFBSixDQUF3QixVQUF4QixDQUE1QjtBQUNBLFFBQU0sb0JBQW9CLEdBQUcsZ0JBQUEsQ0FBQSxjQUFBLENBQWUsS0FBSyxRQUFwQixFQUE4QixJQUFJLGdCQUFBLENBQUEscUJBQUosQ0FBMEIsbUJBQTFCLENBQTlCLENBQTdCOztBQUNBLFFBQUksb0JBQW9CLElBQUksQ0FBQyxtQkFBbUIsQ0FBQyxTQUFqRCxFQUE0RDtBQUMxRCxNQUFBLG1CQUFtQixDQUFDLEdBQXBCLENBQXdCLG9CQUF4QjtBQUNBLGFBQU8sTUFBTSxDQUFDLFNBQVAsQ0FBaUIsbUJBQWpCLENBQVA7QUFDRDs7QUFDRCxXQUFPLG1CQUFQO0FBQ0QsR0FSRDs7QUFTRixTQUFBLGlCQUFBO0FBQUMsQ0FiRCxFQUFBOztBQW9CQSxJQUFBLG1CQUFBLEdBQUEsVUFBQSxNQUFBLEVBQUE7QUFBd0MsRUFBQSxTQUFBLENBQUEsbUJBQUEsRUFBQSxNQUFBLENBQUE7O0FBR3RDLFdBQUEsbUJBQUEsQ0FBWSxXQUFaLEVBQXdDO0FBQXhDLFFBQUEsS0FBQSxHQUNFLE1BQUEsQ0FBQSxJQUFBLENBQUEsSUFBQSxFQUFNLFdBQU4sS0FBa0IsSUFEcEI7O0FBRkEsSUFBQSxLQUFBLENBQUEsU0FBQSxHQUFZLEtBQVo7O0FBSUM7O0FBRUQsRUFBQSxtQkFBQSxDQUFBLFNBQUEsQ0FBQSxVQUFBLEdBQUEsWUFBQTtBQUNFLFNBQUssU0FBTCxHQUFpQixJQUFqQjtBQUNBLFNBQUssUUFBTDtBQUNELEdBSEQ7O0FBS0EsRUFBQSxtQkFBQSxDQUFBLFNBQUEsQ0FBQSxjQUFBLEdBQUEsWUFBQSxDQUVDLENBRkQ7O0FBR0YsU0FBQSxtQkFBQTtBQUFDLENBZkQsQ0FBd0MsZ0JBQUEsQ0FBQSxxQkFBeEMsQ0FBQSJ9

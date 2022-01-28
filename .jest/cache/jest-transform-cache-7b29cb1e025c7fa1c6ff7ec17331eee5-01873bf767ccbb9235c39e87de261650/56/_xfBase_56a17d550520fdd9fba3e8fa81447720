@@ -1,0 +1,10 @@
+6c1fe51392edc63b0765bed7022545bb
+module.exports = {
+  init: function init() {
+    return this.xf['@@transducer/init']();
+  },
+  result: function result(_result) {
+    return this.xf['@@transducer/result'](_result);
+  }
+};
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIl94ZkJhc2UuanMiXSwibmFtZXMiOlsibW9kdWxlIiwiZXhwb3J0cyIsImluaXQiLCJ4ZiIsInJlc3VsdCJdLCJtYXBwaW5ncyI6IkFBQUFBLE1BQU0sQ0FBQ0MsT0FBUCxHQUFpQjtBQUNmQyxFQUFBQSxJQUFJLEVBQUUsZ0JBQVk7QUFDaEIsV0FBTyxLQUFLQyxFQUFMLENBQVEsbUJBQVIsR0FBUDtBQUNELEdBSGM7QUFJZkMsRUFBQUEsTUFBTSxFQUFFLGdCQUFVQSxPQUFWLEVBQWtCO0FBQ3hCLFdBQU8sS0FBS0QsRUFBTCxDQUFRLHFCQUFSLEVBQStCQyxPQUEvQixDQUFQO0FBQ0Q7QUFOYyxDQUFqQiIsInNvdXJjZXNDb250ZW50IjpbIm1vZHVsZS5leHBvcnRzID0ge1xuICBpbml0OiBmdW5jdGlvbiAoKSB7XG4gICAgcmV0dXJuIHRoaXMueGZbJ0BAdHJhbnNkdWNlci9pbml0J10oKTtcbiAgfSxcbiAgcmVzdWx0OiBmdW5jdGlvbiAocmVzdWx0KSB7XG4gICAgcmV0dXJuIHRoaXMueGZbJ0BAdHJhbnNkdWNlci9yZXN1bHQnXShyZXN1bHQpO1xuICB9XG59OyJdfQ==

@@ -1,0 +1,21 @@
+02d79dd06abd5a7beddfa86ff0c76b8f
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var EmptyErrorImpl = function () {
+  function EmptyErrorImpl() {
+    Error.call(this);
+    this.message = 'no elements in sequence';
+    this.name = 'EmptyError';
+    return this;
+  }
+
+  EmptyErrorImpl.prototype = Object.create(Error.prototype);
+  return EmptyErrorImpl;
+}();
+
+exports.EmptyError = EmptyErrorImpl;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy9pbnRlcm5hbC91dGlsL0VtcHR5RXJyb3IudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7Ozs7O0FBT0EsSUFBTSxjQUFjLEdBQUksWUFBQTtBQUN0QixXQUFTLGNBQVQsR0FBdUI7QUFDckIsSUFBQSxLQUFLLENBQUMsSUFBTixDQUFXLElBQVg7QUFDQSxTQUFLLE9BQUwsR0FBZSx5QkFBZjtBQUNBLFNBQUssSUFBTCxHQUFZLFlBQVo7QUFDQSxXQUFPLElBQVA7QUFDRDs7QUFFRCxFQUFBLGNBQWMsQ0FBQyxTQUFmLEdBQTJCLE1BQU0sQ0FBQyxNQUFQLENBQWMsS0FBSyxDQUFDLFNBQXBCLENBQTNCO0FBRUEsU0FBTyxjQUFQO0FBQ0QsQ0FYc0IsRUFBdkI7O0FBdUJhLE9BQUEsQ0FBQSxVQUFBLEdBQTZCLGNBQTdCIn0=

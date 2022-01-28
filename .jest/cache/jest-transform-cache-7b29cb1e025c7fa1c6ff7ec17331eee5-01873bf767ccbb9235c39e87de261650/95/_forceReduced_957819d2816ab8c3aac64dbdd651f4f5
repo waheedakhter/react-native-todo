@@ -1,0 +1,10 @@
+d21f81408a70907e875fe85f763c0d0e
+function _forceReduced(x) {
+  return {
+    '@@transducer/value': x,
+    '@@transducer/reduced': true
+  };
+}
+
+module.exports = _forceReduced;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIl9mb3JjZVJlZHVjZWQuanMiXSwibmFtZXMiOlsiX2ZvcmNlUmVkdWNlZCIsIngiLCJtb2R1bGUiLCJleHBvcnRzIl0sIm1hcHBpbmdzIjoiQUFBQSxTQUFTQSxhQUFULENBQXVCQyxDQUF2QixFQUEwQjtBQUN4QixTQUFPO0FBQ0wsMEJBQXNCQSxDQURqQjtBQUVMLDRCQUF3QjtBQUZuQixHQUFQO0FBSUQ7O0FBRURDLE1BQU0sQ0FBQ0MsT0FBUCxHQUFpQkgsYUFBakIiLCJzb3VyY2VzQ29udGVudCI6WyJmdW5jdGlvbiBfZm9yY2VSZWR1Y2VkKHgpIHtcbiAgcmV0dXJuIHtcbiAgICAnQEB0cmFuc2R1Y2VyL3ZhbHVlJzogeCxcbiAgICAnQEB0cmFuc2R1Y2VyL3JlZHVjZWQnOiB0cnVlXG4gIH07XG59XG5cbm1vZHVsZS5leHBvcnRzID0gX2ZvcmNlUmVkdWNlZDsiXX0=

@@ -1,0 +1,19 @@
+a813b803e28646ee35cd9e5db2d5ea2d
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+function getSymbolIterator() {
+  if (typeof Symbol !== 'function' || !Symbol.iterator) {
+    return '@@iterator';
+  }
+
+  return Symbol.iterator;
+}
+
+exports.getSymbolIterator = getSymbolIterator;
+exports.iterator = getSymbolIterator();
+exports.$$iterator = exports.iterator;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy9pbnRlcm5hbC9zeW1ib2wvaXRlcmF0b3IudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7Ozs7O0FBQUEsU0FBZ0IsaUJBQWhCLEdBQWlDO0FBQy9CLE1BQUksT0FBTyxNQUFQLEtBQWtCLFVBQWxCLElBQWdDLENBQUMsTUFBTSxDQUFDLFFBQTVDLEVBQXNEO0FBQ3BELFdBQU8sWUFBUDtBQUNEOztBQUVELFNBQU8sTUFBTSxDQUFDLFFBQWQ7QUFDRDs7QUFORCxPQUFBLENBQUEsaUJBQUEsR0FBQSxpQkFBQTtBQVFhLE9BQUEsQ0FBQSxRQUFBLEdBQVcsaUJBQWlCLEVBQTVCO0FBS0EsT0FBQSxDQUFBLFVBQUEsR0FBYSxPQUFBLENBQUEsUUFBYiJ9

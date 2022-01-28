@@ -1,0 +1,21 @@
+9f1a29a34c9a2139339afd82467ef763
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var TimeoutErrorImpl = function () {
+  function TimeoutErrorImpl() {
+    Error.call(this);
+    this.message = 'Timeout has occurred';
+    this.name = 'TimeoutError';
+    return this;
+  }
+
+  TimeoutErrorImpl.prototype = Object.create(Error.prototype);
+  return TimeoutErrorImpl;
+}();
+
+exports.TimeoutError = TimeoutErrorImpl;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy9pbnRlcm5hbC91dGlsL1RpbWVvdXRFcnJvci50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7Ozs7QUFPQSxJQUFNLGdCQUFnQixHQUFJLFlBQUE7QUFDeEIsV0FBUyxnQkFBVCxHQUF5QjtBQUN2QixJQUFBLEtBQUssQ0FBQyxJQUFOLENBQVcsSUFBWDtBQUNBLFNBQUssT0FBTCxHQUFlLHNCQUFmO0FBQ0EsU0FBSyxJQUFMLEdBQVksY0FBWjtBQUNBLFdBQU8sSUFBUDtBQUNEOztBQUVELEVBQUEsZ0JBQWdCLENBQUMsU0FBakIsR0FBNkIsTUFBTSxDQUFDLE1BQVAsQ0FBYyxLQUFLLENBQUMsU0FBcEIsQ0FBN0I7QUFFQSxTQUFPLGdCQUFQO0FBQ0QsQ0FYd0IsRUFBekI7O0FBb0JhLE9BQUEsQ0FBQSxZQUFBLEdBQWlDLGdCQUFqQyJ9

@@ -1,0 +1,7 @@
+255cdcc46b6bfb2ad24b687767a4ae9e
+function _of(x) {
+  return [x];
+}
+
+module.exports = _of;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIl9vZi5qcyJdLCJuYW1lcyI6WyJfb2YiLCJ4IiwibW9kdWxlIiwiZXhwb3J0cyJdLCJtYXBwaW5ncyI6IkFBQUEsU0FBU0EsR0FBVCxDQUFhQyxDQUFiLEVBQWdCO0FBQ2QsU0FBTyxDQUFDQSxDQUFELENBQVA7QUFDRDs7QUFFREMsTUFBTSxDQUFDQyxPQUFQLEdBQWlCSCxHQUFqQiIsInNvdXJjZXNDb250ZW50IjpbImZ1bmN0aW9uIF9vZih4KSB7XG4gIHJldHVybiBbeF07XG59XG5cbm1vZHVsZS5leHBvcnRzID0gX29mOyJdfQ==

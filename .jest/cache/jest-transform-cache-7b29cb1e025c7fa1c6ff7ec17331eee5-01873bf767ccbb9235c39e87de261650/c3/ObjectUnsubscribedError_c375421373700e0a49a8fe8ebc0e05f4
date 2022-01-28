@@ -1,0 +1,21 @@
+b1e57ac243aa52706ce4824ba7fddb73
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var ObjectUnsubscribedErrorImpl = function () {
+  function ObjectUnsubscribedErrorImpl() {
+    Error.call(this);
+    this.message = 'object unsubscribed';
+    this.name = 'ObjectUnsubscribedError';
+    return this;
+  }
+
+  ObjectUnsubscribedErrorImpl.prototype = Object.create(Error.prototype);
+  return ObjectUnsubscribedErrorImpl;
+}();
+
+exports.ObjectUnsubscribedError = ObjectUnsubscribedErrorImpl;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy9pbnRlcm5hbC91dGlsL09iamVjdFVuc3Vic2NyaWJlZEVycm9yLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7Ozs7OztBQU9BLElBQU0sMkJBQTJCLEdBQUksWUFBQTtBQUNuQyxXQUFTLDJCQUFULEdBQW9DO0FBQ2xDLElBQUEsS0FBSyxDQUFDLElBQU4sQ0FBVyxJQUFYO0FBQ0EsU0FBSyxPQUFMLEdBQWUscUJBQWY7QUFDQSxTQUFLLElBQUwsR0FBWSx5QkFBWjtBQUNBLFdBQU8sSUFBUDtBQUNEOztBQUVELEVBQUEsMkJBQTJCLENBQUMsU0FBNUIsR0FBd0MsTUFBTSxDQUFDLE1BQVAsQ0FBYyxLQUFLLENBQUMsU0FBcEIsQ0FBeEM7QUFFQSxTQUFPLDJCQUFQO0FBQ0QsQ0FYbUMsRUFBcEM7O0FBc0JhLE9BQUEsQ0FBQSx1QkFBQSxHQUF1RCwyQkFBdkQifQ==

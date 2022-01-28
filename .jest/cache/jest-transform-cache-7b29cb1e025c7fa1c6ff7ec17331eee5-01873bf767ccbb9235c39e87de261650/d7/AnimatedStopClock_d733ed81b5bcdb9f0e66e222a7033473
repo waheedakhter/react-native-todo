@@ -1,0 +1,96 @@
+cfeb35216d1056761d6464e9a816074d
+"use strict";
+
+var _interopRequireDefault2 = require("@babel/runtime/helpers/interopRequireDefault");
+
+var _classCallCheck2 = _interopRequireDefault2(require("@babel/runtime/helpers/classCallCheck"));
+
+var _createClass2 = _interopRequireDefault2(require("@babel/runtime/helpers/createClass"));
+
+var _assertThisInitialized2 = _interopRequireDefault2(require("@babel/runtime/helpers/assertThisInitialized"));
+
+var _inherits2 = _interopRequireDefault2(require("@babel/runtime/helpers/inherits"));
+
+var _possibleConstructorReturn2 = _interopRequireDefault2(require("@babel/runtime/helpers/possibleConstructorReturn"));
+
+var _getPrototypeOf2 = _interopRequireDefault2(require("@babel/runtime/helpers/getPrototypeOf"));
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = (0, _getPrototypeOf2.default)(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = (0, _getPrototypeOf2.default)(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return (0, _possibleConstructorReturn2.default)(this, result); }; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.createAnimatedStopClock = createAnimatedStopClock;
+
+var _AnimatedNode = _interopRequireDefault(require("./AnimatedNode"));
+
+var _AnimatedClock = _interopRequireDefault(require("./AnimatedClock"));
+
+var _AnimatedParam = require("./AnimatedParam");
+
+var _invariant = _interopRequireDefault(require("fbjs/lib/invariant"));
+
+function _interopRequireDefault(obj) {
+  return obj && obj.__esModule ? obj : {
+    default: obj
+  };
+}
+
+function _defineProperty(obj, key, value) {
+  if (key in obj) {
+    Object.defineProperty(obj, key, {
+      value: value,
+      enumerable: true,
+      configurable: true,
+      writable: true
+    });
+  } else {
+    obj[key] = value;
+  }
+
+  return obj;
+}
+
+var AnimatedStopClock = function (_AnimatedNode$default) {
+  (0, _inherits2.default)(AnimatedStopClock, _AnimatedNode$default);
+
+  var _super = _createSuper(AnimatedStopClock);
+
+  function AnimatedStopClock(clockNode) {
+    var _this;
+
+    (0, _classCallCheck2.default)(this, AnimatedStopClock);
+    (0, _invariant.default)(clockNode instanceof _AnimatedClock.default || clockNode instanceof _AnimatedParam.AnimatedParam, "Reanimated: Animated.stopClock argument should be of type AnimatedClock but got ".concat(clockNode));
+    _this = _super.call(this, {
+      type: 'clockStop',
+      clock: clockNode
+    });
+
+    _defineProperty((0, _assertThisInitialized2.default)(_this), "_clockNode", void 0);
+
+    _this._clockNode = clockNode;
+    return _this;
+  }
+
+  (0, _createClass2.default)(AnimatedStopClock, [{
+    key: "toString",
+    value: function toString() {
+      return "AnimatedStopClock, id: ".concat(this.__nodeID);
+    }
+  }, {
+    key: "__onEvaluate",
+    value: function __onEvaluate() {
+      this._clockNode.stop();
+
+      return 0;
+    }
+  }]);
+  return AnimatedStopClock;
+}(_AnimatedNode.default);
+
+function createAnimatedStopClock(clock) {
+  return new AnimatedStopClock(clock);
+}
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkFuaW1hdGVkU3RvcENsb2NrLmpzIl0sIm5hbWVzIjpbIkFuaW1hdGVkTm9kZSIsImNvbnN0cnVjdG9yIiwiY2xvY2tOb2RlIiwiQW5pbWF0ZWRDbG9jayIsIkFuaW1hdGVkUGFyYW0iLCJ0eXBlIiwiY2xvY2siLCJ0b1N0cmluZyIsIl9fb25FdmFsdWF0ZSJdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztBQUFBLElBQUEsYUFBQSxHQUFBLHNCQUFBLENBQUEsT0FBQSxDQUFBLGdCQUFBLENBQUEsQ0FBQTs7QUFDQSxJQUFBLGNBQUEsR0FBQSxzQkFBQSxDQUFBLE9BQUEsQ0FBQSxpQkFBQSxDQUFBLENBQUE7O0FBQ0EsSUFBQSxjQUFBLEdBQUEsT0FBQSxDQUFBLGlCQUFBLENBQUE7O0FBQ0EsSUFBQSxVQUFBLEdBQUEsc0JBQUEsQ0FBQSxPQUFBLENBQUEsb0JBQUEsQ0FBQSxDQUFBOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztJQUVBLGlCOzs7OztBQUdFQyw2QkFBVyxTQUFYQSxFQUF1QjtBQUFBOztBQUFBO0FBQ3JCLEtBQUEsR0FBQSxVQUFBLENBQUEsT0FBQSxFQUNFQyxTQUFTLFlBQVlDLGNBQUFBLENBQXJCRCxPQUFBQSxJQUFzQ0EsU0FBUyxZQUFZRSxjQUFBQSxDQUQ3RCxhQUFBLEVBQUEsbUZBQUEsTUFBQSxDQUFBLFNBQUEsQ0FBQTtBQUlBLDhCQUFNO0FBQUVDLE1BQUFBLElBQUksRUFBTixXQUFBO0FBQXFCQyxNQUFBQSxLQUFLLEVBQUVKO0FBQTVCLEtBQU47O0FBTHFCLElBQUEsZUFBQSw4Q0FBQSxZQUFBLEVBQUEsS0FBQSxDQUFBLENBQUE7O0FBTXJCLFVBQUEsVUFBQSxHQUFBLFNBQUE7QUFOcUI7QUFPdEI7Ozs7V0FFREssb0JBQVc7QUFDVCxhQUFBLDBCQUFBLE1BQUEsQ0FBaUMsS0FBakMsUUFBQSxDQUFBO0FBQ0Q7OztXQUVEQyx3QkFBZTtBQUNiLFdBQUEsVUFBQSxDQUFBLElBQUE7O0FBQ0EsYUFBQSxDQUFBO0FBQ0Q7OztFQW5CNkJSLGFBQUFBLENBQWhDLE87O0FBc0JPLFNBQUEsdUJBQUEsQ0FBQSxLQUFBLEVBQXdDO0FBQzdDLFNBQU8sSUFBQSxpQkFBQSxDQUFQLEtBQU8sQ0FBUDtBQUNEIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IEFuaW1hdGVkTm9kZSBmcm9tICcuL0FuaW1hdGVkTm9kZSc7XG5pbXBvcnQgQW5pbWF0ZWRDbG9jayBmcm9tICcuL0FuaW1hdGVkQ2xvY2snO1xuaW1wb3J0IHsgQW5pbWF0ZWRQYXJhbSB9IGZyb20gXCIuL0FuaW1hdGVkUGFyYW1cIjtcbmltcG9ydCBpbnZhcmlhbnQgZnJvbSAnZmJqcy9saWIvaW52YXJpYW50JztcblxuY2xhc3MgQW5pbWF0ZWRTdG9wQ2xvY2sgZXh0ZW5kcyBBbmltYXRlZE5vZGUge1xuICBfY2xvY2tOb2RlO1xuXG4gIGNvbnN0cnVjdG9yKGNsb2NrTm9kZSkge1xuICAgIGludmFyaWFudChcbiAgICAgIGNsb2NrTm9kZSBpbnN0YW5jZW9mIEFuaW1hdGVkQ2xvY2sgfHwgY2xvY2tOb2RlIGluc3RhbmNlb2YgQW5pbWF0ZWRQYXJhbSxcbiAgICAgIGBSZWFuaW1hdGVkOiBBbmltYXRlZC5zdG9wQ2xvY2sgYXJndW1lbnQgc2hvdWxkIGJlIG9mIHR5cGUgQW5pbWF0ZWRDbG9jayBidXQgZ290ICR7Y2xvY2tOb2RlfWBcbiAgICApO1xuICAgIHN1cGVyKHsgdHlwZTogJ2Nsb2NrU3RvcCcsIGNsb2NrOiBjbG9ja05vZGUgfSk7XG4gICAgdGhpcy5fY2xvY2tOb2RlID0gY2xvY2tOb2RlO1xuICB9XG5cbiAgdG9TdHJpbmcoKSB7XG4gICAgcmV0dXJuIGBBbmltYXRlZFN0b3BDbG9jaywgaWQ6ICR7dGhpcy5fX25vZGVJRH1gO1xuICB9XG5cbiAgX19vbkV2YWx1YXRlKCkge1xuICAgIHRoaXMuX2Nsb2NrTm9kZS5zdG9wKCk7XG4gICAgcmV0dXJuIDA7XG4gIH1cbn1cblxuZXhwb3J0IGZ1bmN0aW9uIGNyZWF0ZUFuaW1hdGVkU3RvcENsb2NrKGNsb2NrKSB7XG4gIHJldHVybiBuZXcgQW5pbWF0ZWRTdG9wQ2xvY2soY2xvY2spO1xufVxuIl19

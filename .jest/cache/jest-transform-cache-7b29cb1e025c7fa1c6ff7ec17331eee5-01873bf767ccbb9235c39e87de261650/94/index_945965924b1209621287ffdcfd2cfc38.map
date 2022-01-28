@@ -1,0 +1,1 @@
+{"version":3,"sources":["index.ts"],"names":["SwiperComponent"],"mappings":";;;;;;;AAAA;;eAEeA,wB","sourcesContent":["import SwiperComponent from \"./SwiperComponent\";\n\nexport default SwiperComponent;\n"]}

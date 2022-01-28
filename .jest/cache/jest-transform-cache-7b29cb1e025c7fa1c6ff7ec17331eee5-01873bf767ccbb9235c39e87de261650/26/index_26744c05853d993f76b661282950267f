@@ -1,0 +1,160 @@
+b6eb7203af1020eac9f6dbbfcee25e4d
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+var _exportNames = {
+  NavigationContainer: true,
+  useBackButton: true,
+  useScrollToTop: true,
+  DefaultTheme: true,
+  DarkTheme: true,
+  ThemeProvider: true,
+  useTheme: true,
+  Link: true,
+  useLinking: true,
+  useLinkTo: true,
+  useLinkProps: true,
+  useLinkBuilder: true,
+  ServerContainer: true
+};
+Object.defineProperty(exports, "NavigationContainer", {
+  enumerable: true,
+  get: function get() {
+    return _NavigationContainer.default;
+  }
+});
+Object.defineProperty(exports, "useBackButton", {
+  enumerable: true,
+  get: function get() {
+    return _useBackButton.default;
+  }
+});
+Object.defineProperty(exports, "useScrollToTop", {
+  enumerable: true,
+  get: function get() {
+    return _useScrollToTop.default;
+  }
+});
+Object.defineProperty(exports, "DefaultTheme", {
+  enumerable: true,
+  get: function get() {
+    return _DefaultTheme.default;
+  }
+});
+Object.defineProperty(exports, "DarkTheme", {
+  enumerable: true,
+  get: function get() {
+    return _DarkTheme.default;
+  }
+});
+Object.defineProperty(exports, "ThemeProvider", {
+  enumerable: true,
+  get: function get() {
+    return _ThemeProvider.default;
+  }
+});
+Object.defineProperty(exports, "useTheme", {
+  enumerable: true,
+  get: function get() {
+    return _useTheme.default;
+  }
+});
+Object.defineProperty(exports, "Link", {
+  enumerable: true,
+  get: function get() {
+    return _Link.default;
+  }
+});
+Object.defineProperty(exports, "useLinking", {
+  enumerable: true,
+  get: function get() {
+    return _useLinking.default;
+  }
+});
+Object.defineProperty(exports, "useLinkTo", {
+  enumerable: true,
+  get: function get() {
+    return _useLinkTo.default;
+  }
+});
+Object.defineProperty(exports, "useLinkProps", {
+  enumerable: true,
+  get: function get() {
+    return _useLinkProps.default;
+  }
+});
+Object.defineProperty(exports, "useLinkBuilder", {
+  enumerable: true,
+  get: function get() {
+    return _useLinkBuilder.default;
+  }
+});
+Object.defineProperty(exports, "ServerContainer", {
+  enumerable: true,
+  get: function get() {
+    return _ServerContainer.default;
+  }
+});
+
+var _core = require("@react-navigation/core");
+
+Object.keys(_core).forEach(function (key) {
+  if (key === "default" || key === "__esModule") return;
+  if (Object.prototype.hasOwnProperty.call(_exportNames, key)) return;
+  if (key in exports && exports[key] === _core[key]) return;
+  Object.defineProperty(exports, key, {
+    enumerable: true,
+    get: function get() {
+      return _core[key];
+    }
+  });
+});
+
+var _NavigationContainer = _interopRequireDefault(require("./NavigationContainer"));
+
+var _useBackButton = _interopRequireDefault(require("./useBackButton"));
+
+var _useScrollToTop = _interopRequireDefault(require("./useScrollToTop"));
+
+var _DefaultTheme = _interopRequireDefault(require("./theming/DefaultTheme"));
+
+var _DarkTheme = _interopRequireDefault(require("./theming/DarkTheme"));
+
+var _ThemeProvider = _interopRequireDefault(require("./theming/ThemeProvider"));
+
+var _useTheme = _interopRequireDefault(require("./theming/useTheme"));
+
+var _Link = _interopRequireDefault(require("./Link"));
+
+var _useLinking = _interopRequireDefault(require("./useLinking"));
+
+var _useLinkTo = _interopRequireDefault(require("./useLinkTo"));
+
+var _useLinkProps = _interopRequireDefault(require("./useLinkProps"));
+
+var _useLinkBuilder = _interopRequireDefault(require("./useLinkBuilder"));
+
+var _ServerContainer = _interopRequireDefault(require("./ServerContainer"));
+
+var _types = require("./types");
+
+Object.keys(_types).forEach(function (key) {
+  if (key === "default" || key === "__esModule") return;
+  if (Object.prototype.hasOwnProperty.call(_exportNames, key)) return;
+  if (key in exports && exports[key] === _types[key]) return;
+  Object.defineProperty(exports, key, {
+    enumerable: true,
+    get: function get() {
+      return _types[key];
+    }
+  });
+});
+
+function _interopRequireDefault(obj) {
+  return obj && obj.__esModule ? obj : {
+    default: obj
+  };
+}
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImluZGV4LnRzeCJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7QUFBQSxJQUFBLEtBQUEsR0FBQSxPQUFBLENBQUEsd0JBQUEsQ0FBQTs7QUFBQSxNQUFBLENBQUEsSUFBQSxDQUFBLEtBQUEsRUFBQSxPQUFBLENBQUEsVUFBQSxHQUFBLEVBQUE7QUFBQSxNQUFBLEdBQUEsS0FBQSxTQUFBLElBQUEsR0FBQSxLQUFBLFlBQUEsRUFBQTtBQUFBLE1BQUEsTUFBQSxDQUFBLFNBQUEsQ0FBQSxjQUFBLENBQUEsSUFBQSxDQUFBLFlBQUEsRUFBQSxHQUFBLENBQUEsRUFBQTtBQUFBLE1BQUEsR0FBQSxJQUFBLE9BQUEsSUFBQSxPQUFBLENBQUEsR0FBQSxDQUFBLEtBQUEsS0FBQSxDQUFBLEdBQUEsQ0FBQSxFQUFBO0FBQUEsRUFBQSxNQUFBLENBQUEsY0FBQSxDQUFBLE9BQUEsRUFBQSxHQUFBLEVBQUE7QUFBQSxJQUFBLFVBQUEsRUFBQSxJQUFBO0FBQUEsSUFBQSxHQUFBLEVBQUEsZUFBQTtBQUFBLGFBQUEsS0FBQSxDQUFBLEdBQUEsQ0FBQTtBQUFBO0FBQUEsR0FBQTtBQUFBLENBQUE7O0FBRUEsSUFBQSxvQkFBQSxHQUFBLHNCQUFBLENBQUEsT0FBQSxDQUFBLHVCQUFBLENBQUEsQ0FBQTs7QUFFQSxJQUFBLGNBQUEsR0FBQSxzQkFBQSxDQUFBLE9BQUEsQ0FBQSxpQkFBQSxDQUFBLENBQUE7O0FBQ0EsSUFBQSxlQUFBLEdBQUEsc0JBQUEsQ0FBQSxPQUFBLENBQUEsa0JBQUEsQ0FBQSxDQUFBOztBQUVBLElBQUEsYUFBQSxHQUFBLHNCQUFBLENBQUEsT0FBQSxDQUFBLHdCQUFBLENBQUEsQ0FBQTs7QUFDQSxJQUFBLFVBQUEsR0FBQSxzQkFBQSxDQUFBLE9BQUEsQ0FBQSxxQkFBQSxDQUFBLENBQUE7O0FBQ0EsSUFBQSxjQUFBLEdBQUEsc0JBQUEsQ0FBQSxPQUFBLENBQUEseUJBQUEsQ0FBQSxDQUFBOztBQUNBLElBQUEsU0FBQSxHQUFBLHNCQUFBLENBQUEsT0FBQSxDQUFBLG9CQUFBLENBQUEsQ0FBQTs7QUFFQSxJQUFBLEtBQUEsR0FBQSxzQkFBQSxDQUFBLE9BQUEsQ0FBQSxRQUFBLENBQUEsQ0FBQTs7QUFDQSxJQUFBLFdBQUEsR0FBQSxzQkFBQSxDQUFBLE9BQUEsQ0FBQSxjQUFBLENBQUEsQ0FBQTs7QUFDQSxJQUFBLFVBQUEsR0FBQSxzQkFBQSxDQUFBLE9BQUEsQ0FBQSxhQUFBLENBQUEsQ0FBQTs7QUFDQSxJQUFBLGFBQUEsR0FBQSxzQkFBQSxDQUFBLE9BQUEsQ0FBQSxnQkFBQSxDQUFBLENBQUE7O0FBQ0EsSUFBQSxlQUFBLEdBQUEsc0JBQUEsQ0FBQSxPQUFBLENBQUEsa0JBQUEsQ0FBQSxDQUFBOztBQUVBLElBQUEsZ0JBQUEsR0FBQSxzQkFBQSxDQUFBLE9BQUEsQ0FBQSxtQkFBQSxDQUFBLENBQUE7O0FBRUEsSUFBQSxNQUFBLEdBQUEsT0FBQSxDQUFBLFNBQUEsQ0FBQTs7QUFBQSxNQUFBLENBQUEsSUFBQSxDQUFBLE1BQUEsRUFBQSxPQUFBLENBQUEsVUFBQSxHQUFBLEVBQUE7QUFBQSxNQUFBLEdBQUEsS0FBQSxTQUFBLElBQUEsR0FBQSxLQUFBLFlBQUEsRUFBQTtBQUFBLE1BQUEsTUFBQSxDQUFBLFNBQUEsQ0FBQSxjQUFBLENBQUEsSUFBQSxDQUFBLFlBQUEsRUFBQSxHQUFBLENBQUEsRUFBQTtBQUFBLE1BQUEsR0FBQSxJQUFBLE9BQUEsSUFBQSxPQUFBLENBQUEsR0FBQSxDQUFBLEtBQUEsTUFBQSxDQUFBLEdBQUEsQ0FBQSxFQUFBO0FBQUEsRUFBQSxNQUFBLENBQUEsY0FBQSxDQUFBLE9BQUEsRUFBQSxHQUFBLEVBQUE7QUFBQSxJQUFBLFVBQUEsRUFBQSxJQUFBO0FBQUEsSUFBQSxHQUFBLEVBQUEsZUFBQTtBQUFBLGFBQUEsTUFBQSxDQUFBLEdBQUEsQ0FBQTtBQUFBO0FBQUEsR0FBQTtBQUFBLENBQUEiLCJzb3VyY2VzQ29udGVudCI6WyJleHBvcnQgKiBmcm9tICdAcmVhY3QtbmF2aWdhdGlvbi9jb3JlJztcblxuZXhwb3J0IHsgZGVmYXVsdCBhcyBOYXZpZ2F0aW9uQ29udGFpbmVyIH0gZnJvbSAnLi9OYXZpZ2F0aW9uQ29udGFpbmVyJztcblxuZXhwb3J0IHsgZGVmYXVsdCBhcyB1c2VCYWNrQnV0dG9uIH0gZnJvbSAnLi91c2VCYWNrQnV0dG9uJztcbmV4cG9ydCB7IGRlZmF1bHQgYXMgdXNlU2Nyb2xsVG9Ub3AgfSBmcm9tICcuL3VzZVNjcm9sbFRvVG9wJztcblxuZXhwb3J0IHsgZGVmYXVsdCBhcyBEZWZhdWx0VGhlbWUgfSBmcm9tICcuL3RoZW1pbmcvRGVmYXVsdFRoZW1lJztcbmV4cG9ydCB7IGRlZmF1bHQgYXMgRGFya1RoZW1lIH0gZnJvbSAnLi90aGVtaW5nL0RhcmtUaGVtZSc7XG5leHBvcnQgeyBkZWZhdWx0IGFzIFRoZW1lUHJvdmlkZXIgfSBmcm9tICcuL3RoZW1pbmcvVGhlbWVQcm92aWRlcic7XG5leHBvcnQgeyBkZWZhdWx0IGFzIHVzZVRoZW1lIH0gZnJvbSAnLi90aGVtaW5nL3VzZVRoZW1lJztcblxuZXhwb3J0IHsgZGVmYXVsdCBhcyBMaW5rIH0gZnJvbSAnLi9MaW5rJztcbmV4cG9ydCB7IGRlZmF1bHQgYXMgdXNlTGlua2luZyB9IGZyb20gJy4vdXNlTGlua2luZyc7XG5leHBvcnQgeyBkZWZhdWx0IGFzIHVzZUxpbmtUbyB9IGZyb20gJy4vdXNlTGlua1RvJztcbmV4cG9ydCB7IGRlZmF1bHQgYXMgdXNlTGlua1Byb3BzIH0gZnJvbSAnLi91c2VMaW5rUHJvcHMnO1xuZXhwb3J0IHsgZGVmYXVsdCBhcyB1c2VMaW5rQnVpbGRlciB9IGZyb20gJy4vdXNlTGlua0J1aWxkZXInO1xuXG5leHBvcnQgeyBkZWZhdWx0IGFzIFNlcnZlckNvbnRhaW5lciB9IGZyb20gJy4vU2VydmVyQ29udGFpbmVyJztcblxuZXhwb3J0ICogZnJvbSAnLi90eXBlcyc7XG4iXX0=

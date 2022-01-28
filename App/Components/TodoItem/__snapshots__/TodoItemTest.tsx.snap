@@ -1,0 +1,169 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TodoItem UI Testing renders snapshot as expected 1`] = `
+<View>
+  <View
+    collapsable={false}
+    onGestureHandlerEvent={[Function]}
+    onGestureHandlerStateChange={[Function]}
+    onLayout={[Function]}
+    style={
+      Array [
+        Object {
+          "transform": Array [
+            Object {
+              "translateX": Array [
+                Array [
+                  AnimatedValue {
+                    " __value": 0,
+                  },
+                  AnimatedValue {
+                    " __value": -750,
+                  },
+                ],
+              ],
+            },
+          ],
+        },
+      ]
+    }
+  >
+    <View
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "opacity": 1,
+        }
+      }
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "backgroundColor": "#FFFFFF",
+              "borderRadius": 10,
+              "elevation": 10,
+              "marginHorizontal": 10,
+              "marginTop": 10,
+              "padding": 10,
+              "shadowColor": "#DDDDDD",
+              "shadowOffset": Object {
+                "height": 3,
+                "width": 3,
+              },
+              "shadowOpacity": 1,
+              "shadowRadius": 10,
+            },
+            Object {
+              "shadowColor": "#DDDDDD",
+            },
+          ]
+        }
+      >
+        <Text
+          numberOfLines={1}
+          style={
+            Object {
+              "fontSize": 30,
+            }
+          }
+        >
+          Item
+        </Text>
+        <Text
+          style={
+            Object {
+              "color": "#666666",
+              "fontSize": 20,
+            }
+          }
+        >
+          Fri Jan 28 2022 18:35:08
+        </Text>
+      </View>
+    </View>
+  </View>
+  <View
+    style={
+      Array [
+        Object {
+          "transform": Array [
+            Object {
+              "translateX": AnimatedValue {
+                " __value": 0,
+              },
+            },
+          ],
+          "width": 0,
+        },
+        Object {
+          "height": "100%",
+          "position": "absolute",
+        },
+      ]
+    }
+  >
+    <View
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "backgroundColor": "#CE1141",
+          "flex": 1,
+          "justifyContent": "center",
+          "marginTop": 10,
+          "opacity": 1,
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "justifyContent": "center",
+            "width": 100,
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "color": "white",
+              "fontSize": 12,
+            }
+          }
+        >
+          Remove
+        </Text>
+      </View>
+    </View>
+  </View>
+  <View
+    style={
+      Object {
+        "backgroundColor": "rgba(52, 52, 52, 0)",
+        "height": "100%",
+        "position": "absolute",
+        "width": "6%",
+      }
+    }
+  />
+</View>
+`;

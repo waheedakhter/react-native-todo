@@ -1,0 +1,24 @@
+136e83c162a7281506d4232b466e7892
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var reduce_1 = require("./reduce");
+
+function toArrayReducer(arr, item, index) {
+  if (index === 0) {
+    return [item];
+  }
+
+  arr.push(item);
+  return arr;
+}
+
+function toArray() {
+  return reduce_1.reduce(toArrayReducer, []);
+}
+
+exports.toArray = toArray;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy9pbnRlcm5hbC9vcGVyYXRvcnMvdG9BcnJheS50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7Ozs7QUFBQSxJQUFBLFFBQUEsR0FBQSxPQUFBLENBQUEsVUFBQSxDQUFBOztBQUdBLFNBQVMsY0FBVCxDQUEyQixHQUEzQixFQUFxQyxJQUFyQyxFQUE4QyxLQUE5QyxFQUEyRDtBQUN6RCxNQUFJLEtBQUssS0FBSyxDQUFkLEVBQWlCO0FBQ2YsV0FBTyxDQUFDLElBQUQsQ0FBUDtBQUNEOztBQUNELEVBQUEsR0FBRyxDQUFDLElBQUosQ0FBUyxJQUFUO0FBQ0EsU0FBTyxHQUFQO0FBQ0Q7O0FBaUNELFNBQWdCLE9BQWhCLEdBQXVCO0FBQ3JCLFNBQU8sUUFBQSxDQUFBLE1BQUEsQ0FBTyxjQUFQLEVBQXVCLEVBQXZCLENBQVA7QUFDRDs7QUFGRCxPQUFBLENBQUEsT0FBQSxHQUFBLE9BQUEifQ==

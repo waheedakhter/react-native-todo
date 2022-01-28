@@ -1,0 +1,81 @@
+aa1aa66d33a731db0aefd4e156f65ba4
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = useCurrentRender;
+
+var React = _interopRequireWildcard(require("react"));
+
+var _CurrentRenderContext = _interopRequireDefault(require("./CurrentRenderContext"));
+
+function _interopRequireDefault(obj) {
+  return obj && obj.__esModule ? obj : {
+    default: obj
+  };
+}
+
+function _getRequireWildcardCache() {
+  if (typeof WeakMap !== "function") return null;
+  var cache = new WeakMap();
+
+  _getRequireWildcardCache = function _getRequireWildcardCache() {
+    return cache;
+  };
+
+  return cache;
+}
+
+function _interopRequireWildcard(obj) {
+  if (obj && obj.__esModule) {
+    return obj;
+  }
+
+  if (obj === null || typeof obj !== "object" && typeof obj !== "function") {
+    return {
+      default: obj
+    };
+  }
+
+  var cache = _getRequireWildcardCache();
+
+  if (cache && cache.has(obj)) {
+    return cache.get(obj);
+  }
+
+  var newObj = {};
+  var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor;
+
+  for (var key in obj) {
+    if (Object.prototype.hasOwnProperty.call(obj, key)) {
+      var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null;
+
+      if (desc && (desc.get || desc.set)) {
+        Object.defineProperty(newObj, key, desc);
+      } else {
+        newObj[key] = obj[key];
+      }
+    }
+  }
+
+  newObj.default = obj;
+
+  if (cache) {
+    cache.set(obj, newObj);
+  }
+
+  return newObj;
+}
+
+function useCurrentRender(_ref) {
+  var state = _ref.state,
+      navigation = _ref.navigation,
+      descriptors = _ref.descriptors;
+  var current = React.useContext(_CurrentRenderContext.default);
+
+  if (current && navigation.isFocused()) {
+    current.options = descriptors[state.routes[state.index].key].options;
+  }
+}
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInVzZUN1cnJlbnRSZW5kZXIudHN4Il0sIm5hbWVzIjpbImRlc2NyaXB0b3JzIiwiY3VycmVudCIsIlJlYWN0IiwiQ3VycmVudFJlbmRlckNvbnRleHQiLCJuYXZpZ2F0aW9uIiwic3RhdGUiXSwibWFwcGluZ3MiOiI7Ozs7Ozs7QUFBQSxJQUFBLEtBQUEsR0FBQSx1QkFBQSxDQUFBLE9BQUEsQ0FBQSxPQUFBLENBQUEsQ0FBQTs7QUFFQSxJQUFBLHFCQUFBLEdBQUEsc0JBQUEsQ0FBQSxPQUFBLENBQUEsd0JBQUEsQ0FBQSxDQUFBOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7QUFlZSxTQUFBLGdCQUFBLE9BSUg7QUFBQSxNQUo2QixLQUk3QixRQUo2QixLQUk3QjtBQUFBLE1BSjZCLFVBSTdCLFFBSjZCLFVBSTdCO0FBQUEsTUFEVkEsV0FDVSxRQURWQSxXQUNVO0FBQ1YsTUFBTUMsT0FBTyxHQUFHQyxLQUFLLENBQUxBLFVBQUFBLENBQWlCQyxxQkFBQUEsQ0FBakMsT0FBZ0JELENBQWhCOztBQUVBLE1BQUlELE9BQU8sSUFBSUcsVUFBVSxDQUF6QixTQUFlQSxFQUFmLEVBQXVDO0FBQ3JDSCxJQUFBQSxPQUFPLENBQVBBLE9BQUFBLEdBQWtCRCxXQUFXLENBQUNLLEtBQUssQ0FBTEEsTUFBQUEsQ0FBYUEsS0FBSyxDQUFsQkEsS0FBQUEsRUFBWkwsR0FBVyxDQUFYQSxDQUFsQkMsT0FBQUE7QUFDRDtBQUNGIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0ICogYXMgUmVhY3QgZnJvbSAncmVhY3QnO1xuaW1wb3J0IHR5cGUgeyBOYXZpZ2F0aW9uU3RhdGUsIFBhcmFtTGlzdEJhc2UgfSBmcm9tICdAcmVhY3QtbmF2aWdhdGlvbi9yb3V0ZXJzJztcbmltcG9ydCBDdXJyZW50UmVuZGVyQ29udGV4dCBmcm9tICcuL0N1cnJlbnRSZW5kZXJDb250ZXh0JztcbmltcG9ydCB0eXBlIHsgRGVzY3JpcHRvciwgTmF2aWdhdGlvbkhlbHBlcnMgfSBmcm9tICcuL3R5cGVzJztcblxudHlwZSBPcHRpb25zID0ge1xuICBzdGF0ZTogTmF2aWdhdGlvblN0YXRlO1xuICBuYXZpZ2F0aW9uOiBOYXZpZ2F0aW9uSGVscGVyczxQYXJhbUxpc3RCYXNlPjtcbiAgZGVzY3JpcHRvcnM6IHtcbiAgICBba2V5OiBzdHJpbmddOiBEZXNjcmlwdG9yPFBhcmFtTGlzdEJhc2UsIHN0cmluZywgTmF2aWdhdGlvblN0YXRlLCBvYmplY3Q+O1xuICB9O1xufTtcblxuLyoqXG4gKiBXcml0ZSB0aGUgY3VycmVudCBvcHRpb25zLCBzbyB0aGF0IHNlcnZlciByZW5kZXJlciBjYW4gZ2V0IGN1cnJlbnQgdmFsdWVzXG4gKiBNdXRhdGluZyB2YWx1ZXMgbGlrZSB0aGlzIGlzIG5vdCBzYWZlIGluIGFzeW5jIG1vZGUsIGJ1dCBpdCBkb2Vzbid0IGFwcGx5IHRvIFNTUlxuICovXG5leHBvcnQgZGVmYXVsdCBmdW5jdGlvbiB1c2VDdXJyZW50UmVuZGVyKHtcbiAgc3RhdGUsXG4gIG5hdmlnYXRpb24sXG4gIGRlc2NyaXB0b3JzLFxufTogT3B0aW9ucykge1xuICBjb25zdCBjdXJyZW50ID0gUmVhY3QudXNlQ29udGV4dChDdXJyZW50UmVuZGVyQ29udGV4dCk7XG5cbiAgaWYgKGN1cnJlbnQgJiYgbmF2aWdhdGlvbi5pc0ZvY3VzZWQoKSkge1xuICAgIGN1cnJlbnQub3B0aW9ucyA9IGRlc2NyaXB0b3JzW3N0YXRlLnJvdXRlc1tzdGF0ZS5pbmRleF0ua2V5XS5vcHRpb25zO1xuICB9XG59XG4iXX0=

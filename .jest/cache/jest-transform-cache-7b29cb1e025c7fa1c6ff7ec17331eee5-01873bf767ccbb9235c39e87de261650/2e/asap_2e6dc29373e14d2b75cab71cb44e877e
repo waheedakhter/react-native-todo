@@ -1,0 +1,14 @@
+c828ecee65786f8001f3fe5f05e42ecd
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var AsapAction_1 = require("./AsapAction");
+
+var AsapScheduler_1 = require("./AsapScheduler");
+
+exports.asapScheduler = new AsapScheduler_1.AsapScheduler(AsapAction_1.AsapAction);
+exports.asap = exports.asapScheduler;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy9pbnRlcm5hbC9zY2hlZHVsZXIvYXNhcC50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7Ozs7QUFBQSxJQUFBLFlBQUEsR0FBQSxPQUFBLENBQUEsY0FBQSxDQUFBOztBQUNBLElBQUEsZUFBQSxHQUFBLE9BQUEsQ0FBQSxpQkFBQSxDQUFBOztBQW9DYSxPQUFBLENBQUEsYUFBQSxHQUFnQixJQUFJLGVBQUEsQ0FBQSxhQUFKLENBQWtCLFlBQUEsQ0FBQSxVQUFsQixDQUFoQjtBQUtBLE9BQUEsQ0FBQSxJQUFBLEdBQU8sT0FBQSxDQUFBLGFBQVAifQ==

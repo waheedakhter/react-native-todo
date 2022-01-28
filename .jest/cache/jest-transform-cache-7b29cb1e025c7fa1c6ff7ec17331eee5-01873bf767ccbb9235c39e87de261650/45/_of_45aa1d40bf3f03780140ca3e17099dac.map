@@ -1,0 +1,1 @@
+{"version":3,"sources":["_of.js"],"names":["_of","x","module","exports"],"mappings":"AAAA,SAASA,GAAT,CAAaC,CAAb,EAAgB;AACd,SAAO,CAACA,CAAD,CAAP;AACD;;AAEDC,MAAM,CAACC,OAAP,GAAiBH,GAAjB","sourcesContent":["function _of(x) {\n  return [x];\n}\n\nmodule.exports = _of;"]}

@@ -1,0 +1,14 @@
+cbb5053ca2164bedc27dbced6a5a966a
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _reactNative = require("react-native");
+
+var ReanimatedModule = _reactNative.NativeModules.ReanimatedModule;
+var _default = ReanimatedModule;
+exports.default = _default;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIlJlYW5pbWF0ZWRNb2R1bGUubmF0aXZlLmpzIl0sIm5hbWVzIjpbIlJlYW5pbWF0ZWRNb2R1bGUiLCJOYXRpdmVNb2R1bGVzIl0sIm1hcHBpbmdzIjoiOzs7Ozs7O0FBQUEsSUFBQSxZQUFBLEdBQUEsT0FBQSxDQUFBLGNBQUEsQ0FBQTs7QUFFQSxJQUFRQSxnQkFBUixHQUE2QkMsWUFBQUEsQ0FBN0IsYUFBQSxDQUFRRCxnQkFBUjtlQUVlQSxnQiIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IE5hdGl2ZU1vZHVsZXMgfSBmcm9tICdyZWFjdC1uYXRpdmUnO1xuXG5jb25zdCB7IFJlYW5pbWF0ZWRNb2R1bGUgfSA9IE5hdGl2ZU1vZHVsZXM7XG5cbmV4cG9ydCBkZWZhdWx0IFJlYW5pbWF0ZWRNb2R1bGU7XG4iXX0=

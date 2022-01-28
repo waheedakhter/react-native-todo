@@ -1,0 +1,13 @@
+22006655e0a463ef9c7a8ee8cb8a74e7
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+exports.isArray = function () {
+  return Array.isArray || function (x) {
+    return x && typeof x.length === 'number';
+  };
+}();
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy9pbnRlcm5hbC91dGlsL2lzQXJyYXkudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7Ozs7O0FBQWEsT0FBQSxDQUFBLE9BQUEsR0FBVyxZQUFBO0FBQU0sU0FBQSxLQUFLLENBQUMsT0FBTixJQUFrQixVQUFJLENBQUosRUFBVTtBQUFlLFdBQUEsQ0FBQyxJQUFJLE9BQU8sQ0FBQyxDQUFDLE1BQVQsS0FBTCxRQUFBO0FBQTNDLEdBQUE7QUFBNkUsQ0FBcEYsRUFBViJ9

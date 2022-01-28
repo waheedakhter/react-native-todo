@@ -1,0 +1,14 @@
+0cbe110213e6a91d63b58ad85c328e82
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var QueueAction_1 = require("./QueueAction");
+
+var QueueScheduler_1 = require("./QueueScheduler");
+
+exports.queueScheduler = new QueueScheduler_1.QueueScheduler(QueueAction_1.QueueAction);
+exports.queue = exports.queueScheduler;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy9pbnRlcm5hbC9zY2hlZHVsZXIvcXVldWUudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7Ozs7O0FBQUEsSUFBQSxhQUFBLEdBQUEsT0FBQSxDQUFBLGVBQUEsQ0FBQTs7QUFDQSxJQUFBLGdCQUFBLEdBQUEsT0FBQSxDQUFBLGtCQUFBLENBQUE7O0FBZ0VhLE9BQUEsQ0FBQSxjQUFBLEdBQWlCLElBQUksZ0JBQUEsQ0FBQSxjQUFKLENBQW1CLGFBQUEsQ0FBQSxXQUFuQixDQUFqQjtBQUtBLE9BQUEsQ0FBQSxLQUFBLEdBQVEsT0FBQSxDQUFBLGNBQVIifQ==
